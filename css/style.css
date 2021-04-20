@@ -1,5 +1,5 @@
 body{
-    background-color:beige;
+    background-color:dimgray;
 }
 
 h1 {
@@ -21,4 +21,13 @@ h1 {
     width: 250px;
     height: 50px;
     font-size: 25px;
+}
+
+#popUp{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    background-color: darkgrey;
+    font-size: 30;
+
 }
