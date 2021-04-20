@@ -1,3 +1,24 @@
 body{
     background-color:beige;
 }
+
+h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 50;
+}
+
+#button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#addTask {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 50px;
+    font-size: 25px;
+}
