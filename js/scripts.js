@@ -28,17 +28,17 @@ document.getElementById('newTask').addEventListener('click', () => {
 })
 
 function render() {
-    let biblioteka = document.getElementById('storage');
-    biblioteka.innerHTML = "";
+    let list = document.getElementById('list');
+    list.innerHTML = "";
 
     for(let i = 0; i < tasks.length; i++) {
-        let gramata = `
+        let task = `
         <div class="task">
             <h3>Names: ${tasks[i].names}</h3>
             <h4>Date: ${tasks[i].date}</h4>
         </div>`;
 
-        biblioteka.innerHTML += task;
+        list.innerHTML += task;
     }
 
     localStorage.setItem("tasks", JSON.stringify(tasks))
