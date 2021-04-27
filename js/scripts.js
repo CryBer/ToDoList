@@ -26,3 +26,20 @@ document.getElementById('newTask').addEventListener('click', () => {
     render();
 
 })
+
+function render() {
+    let biblioteka = document.getElementById('storage');
+    biblioteka.innerHTML = "";
+
+    for(let i = 0; i < tasks.length; i++) {
+        let gramata = `
+        <div class="task">
+            <h3>Names: ${tasks[i].names}</h3>
+            <h4>Date: ${tasks[i].date}</h4>
+        </div>`;
+
+        biblioteka.innerHTML += task;
+    }
+
+    localStorage.setItem("tasks", JSON.stringify(tasks))
+}
